@@ -65,6 +65,7 @@ export default function useAuth() {
     const register = async (data) => {
         try {
             const res = await axios.post('/register', data);
+            await attempt();
             router.push({ name: 'dashboard-page' })
 
         } catch (er) {

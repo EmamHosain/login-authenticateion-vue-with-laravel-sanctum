@@ -7,7 +7,7 @@ const formData = reactive({
     name: '',
     email: '',
     password: '',
-    'confirm-password': ''
+    password_confirmation: ''
 })
 </script>
 <template>
@@ -31,7 +31,7 @@ const formData = reactive({
             </div>
             <div class="mb-4">
                 <label for="confirmPassword" class="block text-sm font-medium text-gray-700">Confirm Password</label>
-                <input type="password" id="confirmPassword" v-model="formData.confirmPassword"
+                <input type="password" id="confirmPassword" v-model="formData.password_confirmation"
                     placeholder="Confirm your password" class="form-input w-full">
             </div>
             <button type="submit"
